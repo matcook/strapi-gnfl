@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "matches",
+  "info": {
+    "name": "Match"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Round": {
+      "type": "string",
+      "required": true
+    },
+    "Grade": {
+      "model": "grades"
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Time": {
+      "type": "time"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "homeTeam": {
+      "model": "clubs"
+    },
+    "awayTeam": {
+      "model": "clubs"
+    },
+    "homeTeamGoals": {
+      "type": "integer"
+    },
+    "homeTeamBehinds": {
+      "type": "integer"
+    },
+    "awayTeamGoals": {
+      "type": "integer"
+    },
+    "awayTeamBehinds": {
+      "type": "integer"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Played",
+        "Upcoming",
+        "Abandoned",
+        "Forfeited"
+      ]
+    },
+    "Season": {
+      "model": "season"
+    }
+  }
+}
