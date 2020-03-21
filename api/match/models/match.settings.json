@@ -56,6 +56,9 @@
     },
     "Season": {
       "model": "season"
+    },
+    "Venue": {
+      "model": "venues"
     }
   }
 }
