@@ -1,7 +1,10 @@
 {
-  "host": "localhost",
+  "host": "http://68.183.184.219/",
   "port": "${process.env.PORT || 1337}",
   "production": true,
+  "autoReload": {
+    "enabled": false
+  },
   "proxy": {
     "enabled": false
   },
@@ -9,6 +12,6 @@
     "enabled": false
   },
   "admin": {
-    "autoOpen": false
+    "path": "/dashboard"
   }
 }
