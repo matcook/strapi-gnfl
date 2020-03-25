@@ -26,6 +26,9 @@
       "via": "related",
       "plugin": "upload",
       "required": true
+    },
+    "Slug": {
+      "type": "string"
     }
   }
 }
