@@ -1,29 +1,29 @@
 {
   "kind": "singleType",
   "connection": "default",
-  "collectionName": "home_pages",
+  "collectionName": "resources",
   "info": {
-    "name": "Home Page"
+    "name": "Resources"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "SliderImages": {
+    "Documents": {
       "collection": "file",
       "via": "related",
       "plugin": "upload",
       "required": false
     },
-    "GNFLLogo": {
-      "model": "file",
+    "Forms": {
+      "collection": "file",
       "via": "related",
       "plugin": "upload",
       "required": false
     },
-    "GNWFLLogo": {
-      "model": "file",
+    "Records": {
+      "collection": "file",
       "via": "related",
       "plugin": "upload",
       "required": false
