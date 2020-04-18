@@ -1,5 +1,5 @@
 {
-  "host": "http://68.183.184.219/",
+  "host": "localhost",
   "port": "${process.env.PORT || 1337}",
   "production": true,
   "autoReload": {
@@ -8,7 +8,7 @@
   "proxy": {
     "enabled": true,
     "ssl": true,
-    "host": "www.codita.com.au",
+    "host": "api.gnfl.com.au",
     "port": 443
   },
   "cron": {
